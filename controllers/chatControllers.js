@@ -10,9 +10,9 @@ module.exports = {
                 },
             }).sort({ updatedAt: 1});
 
-            const projectedMessages = messages.map((mag) => {
+            const projectedMessages = messages.map((msg) => {
                 return {
-                 fromSelf: msg.sender.toStrng() === from,
+                 fromSelf: msg.sender.toString() === from,
                  message: msg.message.text,   
                 }
             })
