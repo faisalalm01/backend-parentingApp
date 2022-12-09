@@ -19,12 +19,12 @@ const userSchema = new mongoose.Schema({
         required: true,
         min: 8
     },
-    // nohp: {
-    //     type: String,
-    //     required: true,
-    //     min: 11,
-    //     max: 13
-    // },
+    nohp: {
+        type: String,
+        required: true,
+        min: 11,
+        max: 13
+    },
     isAvatarImageSet: {
         type: Boolean,
         default: false

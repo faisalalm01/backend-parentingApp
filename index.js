@@ -74,6 +74,9 @@ mongoose
     console.log(err.message);
   });
 
+app.use("/testapi", (req, res) => {
+    res.send({msg: "api its work"})
+})
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
